@@ -1,6 +1,6 @@
 # Voxel Renderer
 A voxel renderer written in Rust using WGPU and SDL2.
-It utilizises a compute shader which uses raymarching in order to draw voxels to the frame.
+It utilizes a compute shader which uses raymarching in order to draw voxels to the frame.
 
 ![screenshot](screenshot.png "Screenshot")
 
