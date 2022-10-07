@@ -1,0 +1,32 @@
+[package]
+name = "voxeltracer"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# The rendering backend 
+wgpu = "0.13"
+# The library for window management
+sdl2 = { version = "0.35", features = ["static-link", "bundled", "raw-window-handle"] }
+# An immidiate-mode ui library
+egui = "0.18"
+# A library i wrote to make sdl2 integration with sdl2 easier
+egui_sdl2_platform = {path = "../egui_sdl2_platform"}
+# A library that allows me to draw egui ui using wgpu
+egui_wgpu_backend = "0.18"
+# A library that allows me to execute an async function in a single-threaded context
+pollster = "0.2"
+# A library that handles errors for me so I don't have to. 
+anyhow = "1.0"
+# Een library voor het casten van slices naar bytes
+bytemuck = "1.12"
+# Een library voor wiskunde
+glam = "0.21"
+# Een library om de byte alignments van de uniforms compaitble te krijgen met de GPU
+encase = {version = "0.3", features = ["glam"]}
+# Een library om buffers op te kunnen slaan tot een png file
+image = "0.24"
+# Een library om een file dialogue te creeren.
+rfd = "0.10"
+
+futures-intrusive = "0.4"
