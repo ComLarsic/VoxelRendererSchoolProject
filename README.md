@@ -2,6 +2,8 @@
 A voxel renderer written in Rust using WGPU and SDL2.
 It utilizises a compute shader which uses raymarching in order to draw voxels to the frame.
 
+[screenshot](screenshot.png)
+
 ## Building and Running
 Building and running the app can be done using cargo:
 ```bash
